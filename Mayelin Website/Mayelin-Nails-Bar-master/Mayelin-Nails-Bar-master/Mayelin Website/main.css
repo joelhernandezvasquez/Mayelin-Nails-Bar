@@ -1,0 +1,142 @@
+:root
+{
+    --primary-color:white;
+    --primary-background-color:#e75aa1;
+    --primary-font:'Pacifico', cursive;
+}
+
+/* GENERIC ID AND CLASS */
+
+
+.hamburger-icon-container
+{
+    display:inline-block;
+    cursor:pointer;
+    margin-top:5px;
+    
+}
+.bar1, .bar2, .bar3
+{
+    width:3rem;
+    height:5px;
+    background-color: white;
+    margin:10px 10px;
+}
+
+.welcome-message-container
+{
+   
+    height:300px;
+    margin-top:45px;
+    border:2px solid silver;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#logo-brand
+{
+    width: 70px;
+    height:70px;
+    float:right;
+    margin:5px 20px 0px 0px;
+    border-radius:50%;
+}
+
+.font-style
+{
+   font-family: 'Pacifico', cursive;
+   color:var(--primary-color);
+}
+
+.btn
+{
+    padding:20px;
+    width:200px;
+    height:50px;
+    background:var(--primary-background-color);
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color:var(--primary-color);
+    border:none;
+}
+
+
+
+/* MOBILE LAYOUT */
+
+.wrapper
+{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(9,450px);
+    grid-gap:5px;
+   grid-template-areas: 
+    "header"
+    "about-us"
+    "services-container"
+    "products-container"
+    "gallery-container"
+    "testimony-container"
+    "contact-container"
+    "horario-container"
+    "footer";
+}
+
+.header
+{
+    grid-area:header;
+    background:linear-gradient(to bottom left,#e75aa1,transparent 140% ),url("img/background.jpg"),no-repeat center;
+   background-size:cover;
+
+}
+.header h2
+{
+    font-size:2rem;
+    margin-bottom: 0px;
+}
+.header h1
+{
+    font-size:2.5rem;
+    margin-top:0px;
+}
+.about-us
+{
+    grid-area:about-us;
+    background:green;
+}
+.services-container
+{
+    grid-area:services-container;
+    background:black;
+}
+.products-container
+{
+    grid-area:products-container;
+    background:blue;
+}
+.gallery-container
+{
+ grid-area:gallery-container;
+ background:pink;
+}
+.testimony-container
+{
+    grid-area:testimony-container;
+    background:yellow;
+}
+.contact-container
+{
+    grid-area:contact-container;
+    background:purple;
+}
+.horario-container
+{
+    grid-area:horario-container;
+    background:brown;
+}
+.footer
+{
+    grid-area:footer;
+    background:#e75aa1;
+}
