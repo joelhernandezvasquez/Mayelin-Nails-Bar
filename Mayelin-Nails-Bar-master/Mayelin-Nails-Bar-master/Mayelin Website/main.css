@@ -1,0 +1,81 @@
+
+h1
+{
+    color:white;
+    text-align: center;
+}
+
+
+
+/* MOBILE LAYOUT */
+
+.wrapper
+{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(9,480px);
+    grid-gap:5px;
+   grid-template-areas: 
+    "header"
+    "about-us"
+    "services-container"
+    "products-container"
+    "gallery-container"
+    "testimony-container"
+    "contact-container"
+    "horario-container"
+    "footer";
+}
+
+.header
+{
+    grid-area:header;
+    border:2px solid red;
+  background:linear-gradient(to top right,#e75aa1, transparent 105%), url(img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 25%;
+  
+   
+    
+
+}
+.about-us
+{
+    grid-area:about-us;
+    background:green;
+}
+.services-container
+{
+    grid-area:services-container;
+    background:black;
+}
+.products-container
+{
+    grid-area:products-container;
+    background:blue;
+}
+.gallery-container
+{
+ grid-area:gallery-container;
+ background:pink;
+}
+.testimony-container
+{
+    grid-area:testimony-container;
+    background:yellow;
+}
+.contact-container
+{
+    grid-area:contact-container;
+    background:purple;
+}
+.horario-container
+{
+    grid-area:horario-container;
+    background:brown;
+}
+.footer
+{
+    grid-area:footer;
+    background:#e75aa1;
+}
